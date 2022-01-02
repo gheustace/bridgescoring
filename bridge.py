@@ -89,11 +89,11 @@ def view_score():
     print(f"{us[1][0]}" + (12 - space2) * " " + f"||{them[1][0]}")
     if len(us[1]) != 1 or len(them[1]) != 1:
         print("------------||------------")
-        if len(us[1]) != 1 and len(them[1]) == 1:
+        if len(us[1]) != 1 and len(them[1]) != 1:
             print(f"{us[1][1]}" + (12 - space3) * " " + f"||{them[1][1]}")
         elif len(us[1]) == 1 and len(them[1]) != 1:
             print(12 * " " + f"||{them[1][1]}")
-        if len(us[1]) != 1 and len(them[1]) == 1:
+        elif len(us[1]) != 1 and len(them[1]) == 1:
             print(f"{us[1][1]}" + (12 - space3) * " " + "||")
     print("\n")
 
